@@ -23,6 +23,8 @@
 	</developers>
     <modules>
         <module>core</module>
+        <module>adapter</module>
+        <module>bootstrap</module>
     </modules>
     <scm>
 		<connection/>
