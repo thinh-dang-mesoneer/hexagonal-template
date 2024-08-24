@@ -22,10 +22,11 @@
 		<developer/>
 	</developers>
     <modules>
-        <module>core</module>
+        <module>app</module>
         <module>adapter</module>
-        <module>bootstrap</module>
-    </modules>
+        <module>start</module>
+		<module>domain</module>
+	</modules>
     <scm>
 		<connection/>
 		<developerConnection/>

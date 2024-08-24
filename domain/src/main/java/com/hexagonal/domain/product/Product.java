@@ -1,4 +1,4 @@
-package com.hexagonal.core.models;
+package com.hexagonal.domain.product;
 
 public class Product {
     private Long id;
