@@ -1,4 +1,5 @@
 package com.hexagonal.domain.product;
 
-public class ProductRepository {
+public interface ProductRepository {
+    void save();
 }
