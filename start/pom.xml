@@ -20,7 +20,12 @@
     <dependencies>
         <dependency>
             <groupId>com.hexagonal</groupId>
-            <artifactId>adapter</artifactId>
+            <artifactId>rest</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.hexagonal</groupId>
+            <artifactId>app</artifactId>
             <version>${project.version}</version>
         </dependency>
     </dependencies>
