@@ -13,4 +13,8 @@ public class ProductDomainService {
     public void save() {
         productRepository.save();
     }
+
+    public Product findById(Long id) {
+        return productRepository.findById(id);
+    }
 }

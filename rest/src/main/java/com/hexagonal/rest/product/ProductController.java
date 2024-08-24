@@ -18,4 +18,9 @@ public class ProductController {
     public void save() {
         productAppService.save();
     }
+
+    @PostMapping("/addToCart/{productId}")
+    public void addToCart(Long productId) {
+        productAppService.addToCart(productId);
+    }
 }
