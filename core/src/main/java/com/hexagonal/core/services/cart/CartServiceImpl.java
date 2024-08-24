@@ -6,9 +6,7 @@ import com.hexagonal.core.models.Product;
 import com.hexagonal.core.ports.in.rest.CartService;
 import com.hexagonal.core.ports.out.persistent.CartRepository;
 import com.hexagonal.core.ports.out.persistent.ProductRepository;
-import org.springframework.stereotype.Service;
 
-@Service
 public class CartServiceImpl implements CartService {
     private final ProductRepository productRepository;
     private final CartRepository cartRepository;
