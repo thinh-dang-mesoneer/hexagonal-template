@@ -6,18 +6,24 @@ import com.hexagonal.core.models.Product;
 import com.hexagonal.core.ports.in.rest.CartService;
 import com.hexagonal.core.ports.out.persistent.CartRepository;
 import com.hexagonal.core.ports.out.persistent.ProductRepository;
+import org.springframework.stereotype.Service;
 
+@Service
 public class CartServiceImpl implements CartService {
     private final ProductRepository productRepository;
     private final CartRepository cartRepository;
 
-    public CartServiceImpl(ProductRepository productRepository, CartRepository cartRepository) {
-        this.productRepository = productRepository;
-        this.cartRepository = cartRepository;
+    public CartServiceImpl() {
+        this.productRepository = null;
+        this.cartRepository = null;
     }
 
     @Override
     public void addToCart(Long cartId, Long productId, int quantity) {
+        if (quantity <= 0) {
+            throw new IllegalArgumentException("Quantity must be greater than zero");
+        }
+
         Cart cart = cartRepository.findById(cartId)
                 .orElseThrow(() -> new RuntimeException("Cart not found"));
         Product product = productRepository.findById(productId)
