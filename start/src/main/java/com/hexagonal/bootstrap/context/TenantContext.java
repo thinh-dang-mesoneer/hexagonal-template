@@ -4,7 +4,7 @@ import org.hibernate.context.spi.CurrentTenantIdentifierResolver;
 
 public class TenantContext {
 
-    public static final String DEFAULT_TENANT_IDENTIFIER = "dbo";
+    public static final String DEFAULT_TENANT_IDENTIFIER = "public";
 
     private static final ThreadLocal<String> TENANT_IDENTIFIER =
             new ThreadLocal<>();

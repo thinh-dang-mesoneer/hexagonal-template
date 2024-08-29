@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class SchemaResolver implements CurrentTenantIdentifierResolver {
 
-    private static final String DEFAULT_TENANT_ID = "Schema1"; // default schema
+    private static final String DEFAULT_TENANT_ID = "public"; // default schema
 
     private static final ThreadLocal<String> currentTenant = new ThreadLocal<>();
 
