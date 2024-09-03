@@ -27,7 +27,8 @@
 		<module>app</module>
 		<module>infra</module>
 		<module>rest</module>
-	</modules>
+        <module>common</module>
+    </modules>
     <scm>
 		<connection/>
 		<developerConnection/>

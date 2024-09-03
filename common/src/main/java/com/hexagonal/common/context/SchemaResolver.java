@@ -1,4 +1,4 @@
-package com.hexagonal.bootstrap.context;
+package com.hexagonal.common.context;
 
 import org.hibernate.context.spi.CurrentTenantIdentifierResolver;
 import org.springframework.stereotype.Component;
